@@ -1,0 +1,136 @@
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('fonts/Roboto-Bold.ttf');
+}
+
+body {
+	font-family: 'Roboto-Regular';
+	margin: 0px;
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav .logo {
+	margin-left: 150px;
+	padding: 20px 0 20px 0;
+}
+
+nav .menu {
+	padding: 20px 0 20px 0;
+	
+}
+
+nav .menu li {
+	display: inline;
+	padding: 30px 10px 30px 10px;
+	font-size: 14px;
+	color: #787878;
+}
+
+nav .menu li:hover {
+	border-top: 3px solid #2693c0;
+}
+
+.welcome_screen {
+	background-image: url(images/slider/bg1.jpg);
+	height: 550px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	color: #FFFFFF;
+}
+
+
+.welcome_screen h1 {
+	font-family: 'Roboto-Bold';
+	margin: 0px 0px 0px 150px;
+	width: 500px;
+}
+
+.welcome_screen p {
+	font-size: 14px;
+	margin: 10px 0px 10px 150px;
+}
+
+.welcome_screen .cta_welcome_screen {
+	text-align: center;
+	font-size: 18px;
+	margin-left: 150px;
+	width: 100px;
+	background-color: #43add8; 
+	padding: 12px 15px 12px 15px;
+	border-radius: 5px;
+	border-bottom: 3px solid #2693c0;
+}
+
+.welcome_screen .webagency_welcome_screen {
+	color: #43add8;
+}
+
+.our_services h1 {
+	text-align: center;
+	font-family: 'Roboto-Bold';
+	font-size: 42px;
+}
+
+.our_services .illustration {
+	border: 1px solid black;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.our_services p {
+	width: 500px;
+	text-align: center;
+	color: #787878;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+.main_feature {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.main_feature li {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.main_feature .icons {
+	height: 49px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.main_feature .main_feature_list_title {
+	font-size: 18px;
+	font-family: 'Roboto-Bold';
+	text-align: left;
+	padding-left: 40px;
+	margin: 10px 0 10px 0;
+	color: #000;
+}
+
+.main_feature .main_feature_list_text {
+	font-size: 14px;
+	color: #787878;
+	text-align: left;
+	padding-left: 40px;
+	margin: 10px 0 10px 0;
+
+}
