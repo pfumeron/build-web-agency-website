@@ -1,11 +1,16 @@
 @font-face {
-	font-family: 'Roboto-Regular';
-	src: url('fonts/Roboto-Regular.ttf');
+	font-family: 'fontawesome';
+	src: url('fonts/fontawesome-webfont.ttf');
 }
 
 @font-face {
 	font-family: 'Roboto-Bold';
 	src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.ttf');
 }
 
 body {
@@ -22,22 +27,23 @@ h1 {
 nav {
 	display: flex;
 	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #FFF;
+	z-index: 2;
 }
 
 nav .logo {
-	margin-left: 150px;
+	margin-left: 10%;
 	padding: 20px 0 20px 0;
 }
 
 nav .menu {
 	margin: 0;
 	padding: 40px 0 20px 0;
-	margin-right: 150px;
+	margin-right: 10%;
 	
-}
-
-nav .menu li .accueil {
-	border-top: 3px solid#2693c0;
 }
 
 nav .menu li {
@@ -47,43 +53,50 @@ nav .menu li {
 	color: #787878;
 }
 
+nav .menu .accueil {
+	border-top: 3px solid #2693c0;
+}
+
 nav .menu li:hover {
 	border-top: 3px solid #2693c0;
 }
 
 
-
-.classdiv {
-	top: 50%;
-	transform: translateY(-50%);
-}
-
 .welcome_screen {
-	background-image: url(./images/slider/bg1.jpg);
-	height: 550px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center; 
 	color: #FFFFFF;
+	margin-top: 101px;
+	position: relative;
+	z-index: 1;
 }
 
+.welcome_screen img {
+	width: 100%;
+}
+
+.welcome_screen_intro {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
 
 .welcome_screen h1 {
 	font-family: 'Roboto-Bold';
-	margin: 0px 0px 0px 150px;
-	width: 500px;
 	text-align: left;
+	margin-left: 150px;
+	width: 500px;
 }
 
 .welcome_screen p {
 	font-size: 14px;
-	margin: 10px 0px 10px 150px;
+	margin-left: 150px;
 }
 
 .welcome_screen .cta_welcome_screen {
 	text-align: center;
 	font-size: 18px;
-	margin-left: 150px;
 	width: 100px;
 	background-color: #43add8; 
 	padding: 12px 15px 12px 15px;
@@ -129,12 +142,84 @@ nav .menu li:hover {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
+	position: relative;
 }
 
-.main_feature .icons {
-	height: 49px;
-	margin-top: auto;
-	margin-bottom: auto;
+.fa.fa-chart-pie {
+	position: absolute;
+	left: 6px;
+	top: 11px;
+	font-size: 20px;
+	color: #43add8;
+	padding: 8px;
+	border: 10px solid white;
+	border-radius: 50%;
+	z-index: 2
+}
+
+.fa.fa-chart-pie:before {
+	font-family: "fontawesome";
+	content: "\f200";
+}
+
+.fa.fa-cubes {
+	position: absolute;
+	left: 6px;
+	top: 11px;
+	font-size: 20px;
+	color: #43add8;
+	padding: 8px;
+	border: 10px solid white;
+	border-radius: 50%;
+	z-index: 2
+}
+
+.fa.fa-cubes:before {
+	font-family: "fontawesome";
+	content: "\f1b3";
+}
+
+.fa.fa-chart-line {
+	position: absolute;
+	left: 6px;
+	top: 11px;
+	font-size: 20px;
+	color: #43add8;
+	padding: 8px;
+	border: 10px solid white;
+	border-radius: 50%;
+	z-index: 2
+}
+
+.fa.fa-chart-line:before {
+	font-family: "fontawesome";
+	content: "\f201";
+}
+
+.far.fa-circle-o-notch {
+	color:#E9E9E9;
+	font-size: 65px;
+	transform: rotate(90deg);
+	z-index: 1;
+}
+
+.far.fa-circle-o-notch:before {
+	font-family: 'fontawesome';
+	content: "\f1ce";
+}
+
+.fa.fa-circle {
+	position: absolute;
+	left: 60px;
+	top:30px;
+	color: #43add8;
+	border-radius: 50%;
+	
+}
+
+.fa.fa-circle:before {
+	font-family: 'fontawesome';
+	content: "\f111";
 }
 
 .main_feature .main_feature_list_title {
@@ -155,6 +240,11 @@ nav .menu li:hover {
 
 }
 
+.projects {
+	background-color: #F5F5F5;
+	padding-top: 5px;
+}
+
 .projects .creative, .portfolio, .corporate {
 	list-style: none;
 	padding: 10px;
@@ -162,7 +252,7 @@ nav .menu li:hover {
 	color: #787878;
 }
 
-.projects_details li .all-works {
+.project_details li.all-works {
 	list-style: none;
 	padding: 10px;
 	border-top-left-radius: 5px;
@@ -193,8 +283,8 @@ nav .menu li:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-left: 40px;
-	margin-right: 100px;
+	margin-left: 3%;
+	margin-right: 10%;
 	
 }
 
@@ -206,4 +296,53 @@ nav .menu li:hover {
 	width: 90%;
 	margin: 10px 10px 10px 10px;
 	
+}
+
+.contact_info {
+	position: relative;
+}
+
+.contact_info .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(197,228,241,0.5); /*dim the background*/ 
+}
+
+.contact_form {
+	position: absolute;
+	right: 150px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	background-color: #eff5f7;
+	width: 300px;
+	z-index: 2;
+	padding: 0 20px 0 20px;
+}
+
+.contact_form h1 {
+	font-size: 24px;
+	text-align: left;
+}
+
+.contact_form_webagency {
+	font-family: 'Roboto-Bold';
+	color: #63686e;
+}
+
+.contact_form p {
+	font-size: 14px;
+	line-height: 8px;
+	color: #63686e;
+}
+
+.contact_form .tel {
+	border-bottom: 1px dotted #63686e;
+}
+
+.contact_form form {
+	font-family: 'Roboto-Regular';
 }
