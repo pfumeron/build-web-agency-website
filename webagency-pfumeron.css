@@ -1,7 +1,4 @@
-@font-face {
-	font-family: 'fontawesome';
-	src: url('fonts/fontawesome-webfont.ttf');
-}
+
 
 @font-face {
 	font-family: 'Roboto-Bold';
@@ -108,7 +105,9 @@ nav .menu li:hover {
 	color: #43add8;
 }
 
-
+.our_services .illustration {
+	position: relative;
+}
 
 .introduction {
 	width: 500px;
@@ -120,31 +119,82 @@ nav .menu li:hover {
 }
 
 .our_services .illustration, .projects .illustration {
-	border: 1px solid black;
-	width: 100px;
+	border: 0.5px solid #E5E5E5;
+	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.our_services .illustration .fa.fa-circle {
+	position: absolute;
+	top: -12px;
+	left: 60px;
+  	color: #43add8;
+  	border: 4px solid white;
+	border-radius: 50%;
+}
+
 .main_feature {
-	display: flex;
-	flex-direction: row;
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+.main_feature img {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
 .main_feature ul {
-	width: 510px;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding: 0px;
 }
 
 .main_feature li {
 	list-style: none;
-	display: flex;
-	flex-direction: row;
 	position: relative;
 }
 
+.main_feature li div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.service-icon-group {
+	position: relative;
+	width: 20%;
+}
+
+.service-icon {
+	color: #43add8;
+	border: 1px solid #E9E9E9;
+	border-radius: 50%;
+	padding: 20px 20px;
+	font-size: 24px;
+}
+
+.service-circle {
+	position: absolute;
+	top: 50%;
+	right: -20px;
+	color: #43add8;
+	transform: translateY(-50%);
+	border: 4px solid white;
+	border-radius: 50%;
+
+}
+
+.service-text {
+	width: 80%;
+}
+
+
+
+
+/*
 .fa.fa-chart-pie {
 	position: absolute;
 	left: 6px;
@@ -203,10 +253,6 @@ nav .menu li:hover {
 	z-index: 1;
 }
 
-.far.fa-circle-o-notch:before {
-	font-family: 'fontawesome';
-	content: "\f1ce";
-}
 
 .fa.fa-circle {
 	position: absolute;
@@ -222,11 +268,12 @@ nav .menu li:hover {
 	content: "\f111";
 }
 
+*/
+
 .main_feature .main_feature_list_title {
 	font-size: 18px;
 	font-family: 'Roboto-Bold';
 	text-align: left;
-	padding-left: 40px;
 	margin: 10px 0 10px 0;
 	color: #000;
 }
@@ -235,7 +282,6 @@ nav .menu li:hover {
 	font-size: 14px;
 	color: #787878;
 	text-align: left;
-	padding-left: 40px;
 	margin: 10px 0 10px 0;
 
 }
@@ -245,21 +291,51 @@ nav .menu li:hover {
 	padding-top: 5px;
 }
 
+.projects .illustration {
+	position: relative;
+}
+
+.projects .illustration .fa.fa-circle {
+	position: absolute;
+	top: -12px;
+	left: 60px;
+  	color: #43add8;
+  	border: 4px solid white;
+	border-radius: 50%;
+}
+
 .projects .creative, .portfolio, .corporate {
 	list-style: none;
 	padding: 10px;
 	background-color: #e5e5e5;
+	border-bottom: 3px solid #e5e5e5;
 	color: #787878;
 }
 
-.project_details li.all-works {
+.project_details li {
 	list-style: none;
+	position: relative;
+}
+
+.project_details p.all-works {
 	padding: 10px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	background-color: #43add8;
 	border-bottom: 3px solid #2693c0;
 	color: #FFF;
+}
+
+.triangle {
+  position: absolute;
+  left:40%;
+  top: 75%;
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #2693c0;
+  display: block;
 }
 
 .projects .creative:hover, .portfolio:hover, .corporate:hover {
@@ -280,6 +356,7 @@ nav .menu li:hover {
 }
 
 .images_catalog {
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -288,14 +365,52 @@ nav .menu li:hover {
 	
 }
 
-.projects_illustration {
-	
+.images_catalog a {
+	position: relative;
+	margin: 10px;
 }
 
 .projects_illustration img {
-	width: 90%;
-	margin: 10px 10px 10px 10px;
+	height: auto;
+	width: 100%;
 	
+}
+
+.projects_illustration .overlay {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  height: 35%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.5)
+}
+
+a.projects_illustration:hover .overlay {
+  opacity: 1;
+}
+
+.text .title {
+	margin: 0px;
+	font-family: 'Roboto-Bold';
+	font-size: 16px;
+	text-align: left;
+	padding: 10px 0px 5px 0px;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  text-align: left;
+  padding-left: 10px;
+  height: auto;
+  margin: 0px;
+}
+
+.text p {
+	margin: 0px;
 }
 
 .contact_info {
@@ -309,7 +424,7 @@ nav .menu li:hover {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: rgba(197,228,241,0.5); /*dim the background*/ 
+  background-color: rgba(197,230, 244,0.5); 
 }
 
 .contact_form {
@@ -320,7 +435,7 @@ nav .menu li:hover {
 	background-color: #eff5f7;
 	width: 300px;
 	z-index: 2;
-	padding: 0 20px 0 20px;
+	padding: 0 30px 0 20px;
 }
 
 .contact_form h1 {
@@ -337,6 +452,7 @@ nav .menu li:hover {
 	font-size: 14px;
 	line-height: 8px;
 	color: #63686e;
+
 }
 
 .contact_form .tel {
@@ -345,4 +461,40 @@ nav .menu li:hover {
 
 .contact_form form {
 	font-family: 'Roboto-Regular';
+}
+
+.cta_contact_info {
+	font-family: 'Roboto-Regular';
+	text-align: center;
+	width: 100px;
+	background-color: #43add8; 
+	padding: 12px 15px 12px 15px;
+	border-radius: 5px;
+	border-bottom: 3px solid #2693c0;
+}
+
+.contact_form p.cta_contact_info {
+	color: #FFF;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 8px 0px 8px 8px;
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	margin-top: 10px;
+	color: #D8D8D8;
+	border: 1px solid #D8D8D8;
+	border-radius: 5px;
+}
+
+textarea {
+	width: 100%;
+	padding: 8px 0px 8px 8px;
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	border: 1px solid #D8D8D8;
+	border-radius: 5px;
+	margin-top: 10px;
+	color: #D8D8D8;
 }

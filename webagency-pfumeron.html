@@ -3,6 +3,7 @@
 <head>
 	<meta charset=utf-8 />
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="./fonts/fontawesome/web-fonts-with-css/css/fontawesome-all.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="./webagency-pfumeron.css" />
 	<!--[if IE]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,35 +34,40 @@
 
 	<div class="our_services">
 		<h1>NOS SERVICES</h1>
-		<p class="illustration"></p>
+		<div class="illustration"><span class="fa fa-circle"></span></div>
 		<p class="introduction">Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant.</p>
 		
 		<div class="main_feature">
-				<img src="./images/main-feature.png">
-			<ul>
+				<img src="./images/main-feature.png"/><!--
+			--><ul>
 				<li>
-					<span class="fa fa-chart-line"></span>
-					<span class="far fa-circle-o-notch"></span> 
-					<span class="fa fa-circle"></span> 
-					<div>
+					<div class="service-icon-group">
+						<span class="fa fa-2x fa-chart-line service-icon">
+							<span class="fa fa-circle service-circle"></span>
+						</span>
+					</div><!--
+					--><div class="service-text">
 						<p class="main_feature_list_title">UX design</p>
 						<p class="main_feature_list_text">Ibi victu recreati et quiete, postquam abierat timor, vicos Ibi victu recreati et quiete, postquam abierat timor, vicos</p>
 					</div>
 				</li>
 				<li>
-					<span class="fa fa-cubes"></span>
-					<span class="far fa-circle-o-notch"></span>
-					<span class="fa fa-circle"></span>
-					<div>
+					<div class="service-icon-group">
+						<span class="fa fa-2x fa-cubes service-icon">
+							<span class="fa fa-circle service-circle"></span>
+						</span>
+					</div><!--
+					--><div class="service-text">
 						<p class="main_feature_list_title">UI design</p>
 						<p class="main_feature_list_text">Ibi victu recreati et quiete, postquam abierat timor, vicos Ibi victu recreati et quiete, postquam abierat timor, vicos</p>
 					</div>
 				</li>
 				<li>
-					<span class="fa fa-chart-pie"></span>
-					<span class="far fa-circle-o-notch"></span>
-					<span class="fa fa-circle"></span>
-					<div>
+					<div class="service-icon-group">
+						<span class="fa fa-chart-pie service-icon"></span>
+						<span class="fa fa-circle service-circle"></span>
+					</div><!--
+					--><div class="service-text">
 						<p class="main_feature_list_title">SEO</p>
 						<p class="main_feature_list_text">Ibi victu recreati et quiete, postquam abierat timor, vicosIbi victu recreati et quiete, postquam abierat timor, vicos</p>
 					</div>
@@ -72,50 +78,96 @@
 
 	<div class="projects">
 		<h1>NOS PROJETS</h1>
-		<p class="illustration"></p>
+		<div class="illustration"><span class="fa fa-circle"></span></div>
 		<p class="introduction">Ibi victu recreati et quiete, postquam abierat timor, vicos opulentos adorti equestrium adventu cohortium, quae casu propinquabant.</p>
 		<ul class="project_details">
-			<li class="all-works">All Works</li>
-			<li class="creative">Creative</li>
-			<li class="corporate">Corporate</li>
-			<li class="portfolio">Portfolio</li>
+			<li>
+				<span class="triangle"></span>
+				<p class="all-works">All Works</p>
+			</li>
+
+			<li><p class="creative">Creative</p></li>
+			<li><p class="corporate">Corporate</p></li>
+			<li><p class="portfolio">Portfolio</p></li>
 		</ul>
 	
 		<div class="images_catalog">
 			<a class="projects_illustration">
 				<img src="./images/portfolio/01.jpg"/>
-				<div>text au survol avec position absolue</div>
+				<div class="overlay">
+					<div class="text">
+						<p class="title">Project Portfolio</p>
+						<p>text au survol avec position absolue</p>
+				</div>
+				</div>
+
 			</a>
 				<a class="projects_illustration">
 				<img src="./images/portfolio/02.jpg">
-				<div>text au survol avec position absolue</div>
+				<div class="overlay">
+					<div class="text">
+						<p class="title">Project Portfolio</p>
+						<p>text au survol avec position absolue</p>
+					</div>
+				</div>
 			</a>
+			
 			<a class="projects_illustration">
 				<img src="./images/portfolio/03.jpg">
-				<div>text au survol avec position absolue</div>
+				<div class="overlay">
+				<div class="text">
+					<p class="title">Project Portfolio</p>
+					<p>text au survol avec position absolue</p>
+				</div>
+				</div>
 			</a>
 				
 			<a class="projects_illustration">
 				<img src="./images/portfolio/04.jpg">
-				<div>text au survol avec position absolue</div>
+				<div class="overlay">
+					<div class="text">
+						<p class="title">Project Portfolio</p>
+						<p>text au survol avec position absolue</p>
+					</div>
+				</div>
 			</a>
 			</div>
 			<div class="images_catalog">
 			<a class="projects_illustration">
-				<img src="./images/portfolio/01.jpg">
-				<div>text au survol avec position absolue</div>
+				<img src="./images/portfolio/05.jpg">
+				<div class="overlay">
+				<div class="text">
+					<p class="title">Project Portfolio</p>
+					<p>text au survol avec position absolue</p>
+				</div>
+				</div>
 			</a>
 			<a class="projects_illustration">
-				<img src="./images/portfolio/02.jpg">
-				<div>text au survol avec position absolue</div>
+				<img src="./images/portfolio/06.jpg">
+				<div class="overlay">
+					<div class="text">
+						<p class="title">Project Portfolio</p>
+						<p>text au survol avec position absolue</p>
+					</div>
+				</div>
 			</a>
 			<a class="projects_illustration">
-				<img src="./images/portfolio/03.jpg">
-				<div>text au survol avec position absolue</div>
+				<img src="./images/portfolio/07.jpg">
+				<div class="overlay">
+					<div class="text">
+						<p class="title">Project Portfolio</p>
+						<p>text au survol avec position absolue</p>
+					</div>
+				</div>
 			</a>
 			<a class="projects_illustration">
-				<img src="./images/portfolio/04.jpg">
-				<div>text au survol avec position absolue</div>
+				<img src="./images/portfolio/08.jpg">
+				<div class="overlay">
+					<div class="text">
+						<p class="title">Project Portfolio</p>
+						<p>text au survol avec position absolue</p>
+					</div>
+				</div>
 			</a>
 			</ul>
 		</div>
@@ -134,7 +186,7 @@
 		  <textarea name="message" id="message" rows="10">Message</textarea><br>
 		  <p class="cta_contact_info">Send Message</p>
 		</form>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680714!2d2.3476369156502663!3d48.87305177928902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1518989420835" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.221609680714!2d2.3476369156502663!3d48.87305177928902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1518989420835" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 	</div>
 	
 	<footer>
