@@ -1,5 +1,4 @@
 
-
 @font-face {
 	font-family: 'Roboto-Bold';
 	src: url('fonts/Roboto-Bold.ttf');
@@ -79,11 +78,60 @@ nav .menu li:hover {
 	transform: translateY(-50%);
 }
 
+.fas.fa-angle-left {
+	position: absolute;
+	left: 0;
+	margin-left: 5px;
+	font-size: 24px;
+	z-index: 2;
+}
+
+.half-circle-left {
+    position: absolute;
+    width: 35px;
+    height: 65px;
+    background-color: rgba(24, 29, 36,0.2);
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    z-index: 1;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fas.fa-angle-right {
+	position: absolute;
+	right: 0;
+	margin-right: 5px;
+	font-size: 24px;
+	z-index: 2;
+}
+
+.half-circle-right {
+    position: absolute;
+    right: 0;
+    width: 35px;
+    height: 65px;
+    background-color: rgba(24, 29, 36,0.2);
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    transform: rotate(180deg);
+    z-index: 1;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 .welcome_screen h1 {
 	font-family: 'Roboto-Bold';
 	text-align: left;
+	font-size: 36px;
 	margin-left: 150px;
 	width: 500px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .welcome_screen p {
@@ -453,7 +501,7 @@ a.projects_illustration:hover .overlay {
 	right: 150px;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	background-color: rgba(239,245, 247,0.8);
+	background-color: rgba(244, 250, 254,0.8);
 	width: 300px;
 	z-index: 2;
 	padding: 0 30px 0 20px;
