@@ -153,6 +153,22 @@ nav .menu li:hover {
 	color: #43add8;
 }
 
+.welcome-screen-border-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border: solid 2px  rgba(0,0,0,0.3);
+	z-index: 2;
+}
+
+.welcome-screen-border-bottom-blue {
+	position: absolute;
+	bottom: 0;
+	width: 10%;
+	border: solid 2px #43add8;
+	z-index: 3;
+}
+
 .our_services .illustration {
 	position: relative;
 }
