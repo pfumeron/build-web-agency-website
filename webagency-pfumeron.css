@@ -226,6 +226,7 @@ nav .menu li:hover {
 .main_feature li {
 	list-style: none;
 	position: relative;
+	padding-right: 40px;
 }
 
 .main_feature li div {
