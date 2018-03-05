@@ -9,21 +9,23 @@
 	src: url('fonts/Roboto-Regular.ttf');
 }
 
+@media all and (max-width: 1024px) {
 body {
 	font-family: 'Roboto-Regular';
 	margin: 0px;
+	width: 100%;
 }
 
 h1 {
 	text-align: center;
 	font-family: 'Roboto-Bold';
-	font-size: 42px;
+	font-size: 14px;
 }
 
 h2 {
 	text-align: center;
 	font-family: 'Roboto-Bold';
-	font-size: 42px;
+	font-size: 24px;
 }
 
 nav {
@@ -31,28 +33,35 @@ nav {
 	justify-content: space-between;
 	position: fixed;
 	top: 0;
-	width: 100%;
+	width: auto;
 	background-color: #FFF;
-	z-index: 2;
+	z-index: 3;
 }
 
 nav .logo {
-	margin-left: 10%;
+	margin-left: 5%;
 	padding: 20px 0 20px 0;
+	width: 30%;
+}
+
+nav img {
+	width: 100%;
 }
 
 nav .menu {
 	margin: 0;
-	padding: 40px 0 20px 0;
-	margin-right: 10%;
+	padding: 20px 0 20px 30px;
+	margin-right: 5%;
+	width: 60%;
 	
 }
 
 nav .menu li {
 	display: inline;
-	padding: 40px 10px 20px 10px;
-	font-size: 14px;
+	padding: 22px 2px 20px 2px;
+	font-size: 10px;
 	color: #787878;
+
 }
 
 nav .menu a {
@@ -66,8 +75,8 @@ nav .menu .accueil {
 
 nav .menu li:hover {
 	border-top: 3px solid #2693c0;
-	cursor: pointer;
 }
+
 
 
 .welcome_screen {
@@ -75,7 +84,7 @@ nav .menu li:hover {
 	flex-direction: column;
 	justify-content: center; 
 	color: #FFFFFF;
-	margin-top: 101px;
+	margin-top: 65px;
 	position: relative;
 	z-index: 1;
 }
@@ -141,24 +150,24 @@ nav .menu li:hover {
 .welcome_screen h1 {
 	font-family: 'Roboto-Bold';
 	text-align: left;
-	font-size: 36px;
-	margin-left: 150px;
-	width: 500px;
+	font-size: 20px;
+	margin-left: 10%;
+	width: auto;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 .welcome_screen p {
-	font-size: 14px;
-	margin-left: 150px;
+	font-size: 10px;
+	margin-left: 10%;
 }
 
 .welcome_screen .cta_welcome_screen {
 	text-align: center;
-	font-size: 18px;
-	width: 100px;
+	font-size: 10px;
+	width: 60px;
 	background-color: #43add8; 
-	padding: 12px 15px 12px 15px;
+	padding: 8px 10px 8px 10px;
 	border-radius: 5px;
 	border-bottom: 3px solid #2693c0;
 	cursor: pointer;
@@ -190,12 +199,13 @@ nav .menu li:hover {
 }
 
 .introduction {
-	width: 500px;
+	width: auto;
 	text-align: center;
 	color: #787878;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 40px;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 25px;
+	font-size: 12px;
 }
 
 .our_services .illustration, .projects .illustration {
@@ -220,39 +230,40 @@ nav .menu li:hover {
 	margin-right: auto;
 }
 
-.main_feature .main_feature-image {
+.main_feature .main-feature-image {
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
+	display: none;
 }
 
 .main_feature img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	display: none;
 }
 
 .main_feature ul {
 	display: inline-block;
 	vertical-align: top;
-	width: 50%;
+	width: 100%;
 	padding: 0px;
 }
 
 .main_feature li {
 	list-style: none;
 	position: relative;
-	padding-right: 40px;
+	padding: 0px;
 }
 
 .main_feature li div {
 	display: inline-block;
 	vertical-align: middle;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
 .service-icon-group {
 	position: relative;
-	width: 15%;
+	width: 18%;
 }
 
 .service-icon {
@@ -276,11 +287,11 @@ nav .menu li:hover {
 }
 
 .service-text {
-	width: 85%;
+	width: 70%;
 }
 
 .main_feature .main_feature_list_title {
-	font-size: 18px;
+	font-size: 15px;
 	font-family: 'Roboto-Bold';
 	text-align: left;
 	margin: 10px 0 10px 0;
@@ -288,7 +299,7 @@ nav .menu li:hover {
 }
 
 .main_feature .main_feature_list_text {
-	font-size: 14px;
+	font-size: 12px;
 	color: #787878;
 	text-align: left;
 	margin: 10px 0 10px 0;
@@ -329,6 +340,7 @@ nav .menu li:hover {
 
 .project_details p.all-works {
 	padding: 10px;
+	font-size: 12px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	background-color: #43add8;
@@ -360,6 +372,8 @@ nav .menu li:hover {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	font-size: 12px;
+	padding-left: 0px;
 }
 
 .portfolio {
@@ -369,16 +383,15 @@ nav .menu li:hover {
 
 .images_catalog {
 	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	display: block;
 	margin-left: 3%;
-	margin-right: 10%;
+	margin-right: 3%;
 	
 }
 
 .images_catalog a {
 	position: relative;
+	display: block;
 	margin: 10px;
 }
 
@@ -455,11 +468,12 @@ a.projects_illustration:hover .overlay {
 
 .contact_form {
 	position: absolute;
-	right: 150px;
+	left: 50%;
+	transform: translateX(-50%);
 	margin-top: 30px;
 	margin-bottom: 30px;
 	background-color: rgba(244, 250, 254,0.8);
-	width: 300px;
+	width: 70%;
 	z-index: 2;
 	padding: 0 30px 0 20px;
 }
@@ -528,4 +542,6 @@ textarea {
 	border-radius: 5px;
 	margin-top: 10px;
 	color: #D8D8D8;
+}
+
 }
