@@ -33,7 +33,7 @@ nav {
 	top: 0;
 	width: 100%;
 	background-color: #FFF;
-	z-index: 2;
+	z-index: 3;
 }
 
 nav .logo {
@@ -70,7 +70,7 @@ nav .menu li:hover {
 }
 
 
-.welcome_screen {
+.welcome-screen {
 	display: flex;
 	flex-direction: column;
 	justify-content: center; 
@@ -80,11 +80,11 @@ nav .menu li:hover {
 	z-index: 1;
 }
 
-.welcome_screen img {
+.welcome-screen img {
 	width: 100%;
 }
 
-.welcome_screen_intro {
+.welcome-screen-intro {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -138,7 +138,7 @@ nav .menu li:hover {
     box-sizing: border-box;
 }
 
-.welcome_screen h1 {
+.welcome-screen h1 {
 	font-family: 'Roboto-Bold';
 	text-align: left;
 	font-size: 36px;
@@ -148,12 +148,12 @@ nav .menu li:hover {
 	margin-bottom: 0;
 }
 
-.welcome_screen p {
+.welcome-screen p {
 	font-size: 14px;
 	margin-left: 150px;
 }
 
-.welcome_screen .cta_welcome_screen {
+.welcome-screen .cta-welcome-screen {
 	text-align: center;
 	font-size: 18px;
 	width: 100px;
@@ -164,7 +164,7 @@ nav .menu li:hover {
 	cursor: pointer;
 }
 
-.welcome_screen .webagency_welcome_screen {
+.welcome-screen .webagency-welcome-screen {
 	color: #43add8;
 }
 
@@ -185,7 +185,7 @@ nav .menu li:hover {
 	z-index: 3;
 }
 
-.our_services .illustration {
+.our-services .illustration {
 	position: relative;
 }
 
@@ -198,14 +198,14 @@ nav .menu li:hover {
 	margin-top: 40px;
 }
 
-.our_services .illustration, .projects .illustration {
+.our-services .illustration, .projects .illustration {
 	border: 0.5px solid #E5E5E5;
 	width: 150px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.our_services .illustration .fa.fa-circle {
+.our-services .illustration .fa.fa-circle {
 	position: absolute;
 	top: -12px;
 	left: 60px;
@@ -214,38 +214,38 @@ nav .menu li:hover {
 	border-radius: 50%;
 }
 
-.main_feature {
+.main-feature {
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.main_feature .main-feature-image {
+.main-feature .main-feature-image {
 	width: 50%;
 	display: inline-block;
 	vertical-align: top;
 }
 
-.main_feature img {
+.main-feature img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.main_feature ul {
+.main-feature ul {
 	display: inline-block;
 	vertical-align: top;
 	width: 50%;
 	padding: 0px;
 }
 
-.main_feature li {
+.main-feature li {
 	list-style: none;
 	position: relative;
 	padding-right: 40px;
 }
 
-.main_feature li div {
+.main-feature li div {
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -279,7 +279,7 @@ nav .menu li:hover {
 	width: 85%;
 }
 
-.main_feature .main_feature_list_title {
+.main-feature .main-feature-list-title {
 	font-size: 18px;
 	font-family: 'Roboto-Bold';
 	text-align: left;
@@ -287,7 +287,7 @@ nav .menu li:hover {
 	color: #000;
 }
 
-.main_feature .main_feature_list_text {
+.main-feature .main-feature-list-text {
 	font-size: 14px;
 	color: #787878;
 	text-align: left;
@@ -322,12 +322,12 @@ nav .menu li:hover {
 	color: #787878;
 }
 
-.project_details li {
+.project-details li {
 	list-style: none;
 	position: relative;
 }
 
-.project_details p.all-works {
+.project-details p.all-works {
 	padding: 10px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
@@ -356,7 +356,7 @@ nav .menu li:hover {
 	cursor: pointer;
 }
 
-.projects .project_details {
+.projects .project-details {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -367,7 +367,7 @@ nav .menu li:hover {
 	border-bottom-right-radius: 5px;
 }
 
-.images_catalog {
+.images-catalog {
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -377,18 +377,18 @@ nav .menu li:hover {
 	
 }
 
-.images_catalog a {
+.images-catalog a {
 	position: relative;
 	margin: 10px;
 }
 
-.projects_illustration img {
+.projects-illustration img {
 	height: auto;
 	width: 100%;
 	
 }
 
-.projects_illustration .overlay {
+.projects-illustration .overlay {
   position: absolute;
   left: 0;
   bottom: 4px;
@@ -399,7 +399,7 @@ nav .menu li:hover {
   background-color: rgba(0,0,0,0.5)
 }
 
-a.projects_illustration:hover .overlay {
+a.projects-illustration:hover .overlay {
   opacity: 1;
   cursor: pointer;
 }
@@ -439,11 +439,11 @@ a.projects_illustration:hover .overlay {
 	margin-right: 10px;
 }
 
-.contact_info {
+.contact-info {
 	position: relative;
 }
 
-.contact_info .overlay {
+.contact-info .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -453,7 +453,7 @@ a.projects_illustration:hover .overlay {
   background-color: rgba(124, 180, 204,0.5); 
 }
 
-.contact_form {
+.contact-form {
 	position: absolute;
 	right: 150px;
 	margin-top: 30px;
@@ -464,28 +464,28 @@ a.projects_illustration:hover .overlay {
 	padding: 0 30px 0 20px;
 }
 
-.contact_form h1 {
+.contact-form h1 {
 	font-size: 24px;
 	text-align: left;
 }
 
-.contact_form_webagency {
+.contact-form-webagency {
 	font-family: 'Roboto-Bold';
 	color: #63686e;
 }
 
-.contact_form p {
+.contact-form p {
 	font-size: 14px;
 	line-height: 8px;
 	color: #63686e;
 
 }
 
-.contact_form .tel {
+.contact-form .tel {
 	border-bottom: 1px dotted #63686e;
 }
 
-.contact_form form {
+.contact-form form {
 	font-family: 'Roboto-Regular';
 }
 
@@ -504,7 +504,7 @@ input[type=submit] {
 	cursor: pointer;
 }
 
-.contact_form p.cta_contact_info {
+.contact-form p.cta-contact-info {
 	color: #FFF;
 }
 
