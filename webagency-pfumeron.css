@@ -514,7 +514,7 @@ input[type=text] {
 	font-family: 'Roboto-Regular';
 	font-size: 14px;
 	margin-top: 10px;
-	color: #D8D8D8;
+	color: #787878;
 	border: 1px solid #D8D8D8;
 	border-radius: 5px;
 }
@@ -527,5 +527,24 @@ textarea {
 	border: 1px solid #D8D8D8;
 	border-radius: 5px;
 	margin-top: 10px;
-	color: #D8D8D8;
+	color: #787878;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #D8D8D8;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #D8D8D8;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #D8D8D8;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #D8D8D8;
+}
+
+iframe {
+	width: 100%;
+	height: 600px;
+	border:0;
 }
