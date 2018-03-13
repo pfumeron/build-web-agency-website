@@ -544,6 +544,10 @@ input[type=submit] {
 	color: #FFF;
 }
 
+label {
+	display: none;
+}
+
 input[type=text] {
 	width: 100%;
 	padding: 8px 0px 8px 8px;
